@@ -127,12 +127,6 @@ function App() {
     );
   }
 
-  useEffect(() => {
-    // Generate initial matches
-    const generatedMatches = generateMatches(currentUser, mockUsers);
-    setMatches(generatedMatches);
-  }, []);
-
   const handleLike = (matchId: string) => {
     setLikedMatches(prev => [...prev, matchId]);
     
